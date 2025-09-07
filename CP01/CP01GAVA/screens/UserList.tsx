@@ -52,7 +52,7 @@ export default function UserList({ navigation }: UserListProps) {
 
       <TouchableOpacity
         style={styles.addBtn}
-        onPress={() => navigation.navigate("UserForm")}
+        onPress={() => navigation.navigate({ name: "UserForm", params: {} })}
       >
         <Text style={styles.addText}>+</Text>
       </TouchableOpacity>
